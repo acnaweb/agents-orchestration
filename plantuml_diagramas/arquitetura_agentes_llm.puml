@@ -1,0 +1,17 @@
+
+@startuml
+actor Usuário
+entity "Agente Planejador" as Planner
+entity "Agente Executor" as Executor
+entity "Agente Crítico" as Critico
+database "Base de Conhecimento" as KB
+
+Usuário --> Planner : Prompt inicial
+Planner --> Executor : Plano de ação
+Executor --> Critico : Resultado da execução
+Critico --> Executor : Feedback ou ajustes
+Executor --> Usuário : Resposta final
+Planner --> KB : Consulta tarefas históricas
+Critico --> KB : Atualiza avaliações
+
+@enduml

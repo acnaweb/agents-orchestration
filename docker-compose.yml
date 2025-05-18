@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  agente_fsm_1:
+    build: .
+    container_name: agente_fsm_1
+    command: python 05_desafios/agente_explorador_fsm_advanced.py
+  
+  agente_fsm_2:
+    build: .
+    container_name: agente_fsm_2
+    command: python 05_desafios/agente_explorador_fsm_advanced.py
+  
+  dashboard:
+    build: .
+    container_name: dashboard_agente
+    ports:
+      - "8501:8501"
+    command: streamlit run 05_desafios/dashboard_agente_streamlit.py

@@ -1,0 +1,12 @@
+@startuml Centralizada
+actor "Usuário" as User
+rectangle "Orquestrador Central" as Orq {
+  component "Agente A"
+  component "Agente B"
+  component "Agente C"
+}
+User --> Orq : Envia requisição
+Orq --> "Agente A" : Comando
+Orq --> "Agente B" : Comando
+Orq --> "Agente C" : Comando
+@enduml

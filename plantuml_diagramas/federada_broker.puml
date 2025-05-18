@@ -1,0 +1,12 @@
+@startuml Federada
+actor "Usuário" as User
+component "Agente Cliente"
+component "Broker"
+component "Agente Serviço A"
+component "Agente Serviço B"
+
+User --> "Agente Cliente" : Solicita serviço
+"Agente Cliente" --> "Broker" : Publica solicitação
+"Broker" --> "Agente Serviço A" : Encaminha requisição
+"Broker" --> "Agente Serviço B" : Encaminha requisição
+@enduml

@@ -1,0 +1,12 @@
+@startuml Descentralizada
+actor "Usuário" as User
+component "Agente A"
+component "Agente B"
+component "Agente C"
+
+User --> "Agente A" : Inicia comunicação
+
+"Agente A" --> "Agente B" : troca informações
+"Agente B" --> "Agente C" : cooperação
+"Agente C" --> "Agente A" : feedback
+@enduml

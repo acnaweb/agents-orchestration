@@ -1,0 +1,14 @@
+@startuml Hierárquica
+actor "Usuário" as User
+component "Gerente" {
+  component "Agente Supervisor"
+}
+component "Agentes de Execução" {
+  component "Trabalhador A"
+  component "Trabalhador B"
+}
+User --> "Gerente" : Solicita plano
+"Gerente" --> "Agente Supervisor" : Delibera
+"Agente Supervisor" --> "Trabalhador A" : Tarefa
+"Agente Supervisor" --> "Trabalhador B" : Tarefa
+@enduml
