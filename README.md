@@ -1,6 +1,6 @@
 [![Live Demo](https://img.shields.io/badge/Demo-Streamlit%20Live-brightgreen?logo=streamlit)](https://agente-dashboard-abc123-uc.a.run.app)
 
-[![CI](https://github.com/usuario/repositorio/workflows/CI%20-%20Testes%20Automatizados/badge.svg)](https://github.com/usuario/repositorio/actions)
+[![CI](https://github.com/acnaweb/agents-orchestration/workflows/CI%20-%20Testes%20Automatizados/badge.svg)](https://github.com/acnaweb/agents-orchestration/actions)
 
 # 📦 Repositório de Orquestração de Agentes de IA
 
